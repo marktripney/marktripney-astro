@@ -1,5 +1,6 @@
 ---
-
+import Navigation from '../components/Navigation.astro';
+const pageTitle = 'Home';
 ---
 
 <html lang="en">
@@ -8,12 +9,16 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>marktripney | {pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-    <h1>My Astro Site</h1>
+    <div class="w-11/12 md:w-2/3 lg:w-3/5 mx-auto">
+      <header>
+        <Navigation />
+      </header>
+      <main>
+        <h1>My Astro Site</h1>
+      </main>
+    </div>
   </body>
 </html>
